@@ -1,0 +1,77 @@
+﻿$switch-handle-diameter--default: 1.625rem;
+$switch-handle-diameter--small: 0.755rem;
+$ant-switch-small-width: 1.75rem;
+$ant-switch-small-height: 0.875rem;
+
+$switch-backgroundcolor-on: var(--strong-blue);
+$switch-backgroundcolor-off: var(--bright-red);
+$switch-backgroundcolor-disable: var(--grayish-blue2);
+
+:global(.ant-switch-checked) :global(.ant-switch-handle) {
+  left: calc(100% - #{$switch-handle-diameter--default} - var(--size-2));
+}
+:not(:global(.ant-switch-checked)) :global(.ant-switch-inner) {
+  margin: 0 0 0 1.563rem;
+}
+:global(.ant-switch-checked) :global(.ant-switch-inner) {
+  margin: 0 1.563rem 0 0;
+}
+
+:global(.ant-switch) {
+  font-size: 0.813rem;
+  width: 3.75rem;
+  height: 1.875rem;
+  background-color: $switch-backgroundcolor-off;
+
+  &:global(.ant-switch-checked) {
+    background-color: $switch-backgroundcolor-on;
+  }
+  &:global(.ant-switch-disabled) {
+    background-color: $switch-backgroundcolor-disable;
+  }
+
+  &.square {
+    border-radius: 0.25rem;
+    :global(.ant-switch-handle) {
+      &:before {
+        border-radius: 0.25rem;
+      }
+    }
+  }
+
+  :global(.ant-switch-inner) {
+    font-size: inherit;
+  }
+
+  :global(.ant-switch-handle) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: inherit;
+    width: $switch-handle-diameter--default;
+    height: $switch-handle-diameter--default;
+
+    &:before {
+      border-radius: 50%;
+    }
+
+    :local(.showOnButtonContent) {
+      position: relative;
+      left: 0;
+      font-size: inherit;
+    }
+  }
+}
+
+:global(.ant-switch-small) {
+  width: $ant-switch-small-width;
+  height: $ant-switch-small-height;
+  line-height: 1rem;
+  margin: initial;
+  //width: initial;
+  :global(.ant-switch-handle) {
+    width: $switch-handle-diameter--small;
+    height: $switch-handle-diameter--small;
+    top: 0.063rem;
+  }
+}

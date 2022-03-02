@@ -1,0 +1,59 @@
+/**
+ * For DISPLAY FLEX
+ */
+ @mixin display-flex ($flex: flex, $align: center, $justify: center, $wrap: nowrap) {
+    display: $flex;
+    align-items: $align;
+    justify-content: $justify;
+    flex-wrap: $wrap;
+}
+
+/**
+ * FLEX WIDTH
+ * - make "this element" responsive
+ */
+@mixin flex-responsive ($basis: 100%, $grow: 0, $shrink: 0) {
+    flex: $grow $shrink $basis;
+    max-width: $basis;
+}
+
+// for dealing with element margin
+@mixin margin ($top:0, $right: 0, $bottom: 0, $left: 0) {
+    margin: $top $right $bottom $left;
+}
+
+// set element border 
+@mixin border-side ($side: top, $width: 1, $style: solid, $color: transparent) {
+    border-#{$side}: $width $style $color;
+}
+
+@mixin border ($width: var(--size-1), $style: solid, $color: #000) {
+    border: $width $style $color;
+}
+
+// cross-browser border-radius
+@mixin border-radius ($radius: 0) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+}
+
+// cross-browser box-shadow
+@mixin box-shadow ($inOutSet: inset, $hOffset: 0, $vOffset: 0, $blurRadius: 0, $color: transparent) {
+  -webkit-box-shadow: $inOutSet $hOffset $vOffset $blurRadius $color;
+  box-shadow: $inOutSet $hOffset $vOffset $blurRadius $color;
+}
+
+// deal with ellipsis
+@mixin ellipsis ($whitgeSpace: nowrap, $overflow: hidden, $textOverflow: ellipsis, $verticalAlign: middle) {
+  white-space: $whitgeSpace;
+  overflow: $overflow;
+  text-overflow: $textOverflow;
+  vertical-align: $verticalAlign;
+}
+
+@mixin input-disabled {
+  cursor: var(--input-disabled-cursor);
+  border-color: var(--input-disabled-border-color);
+  color: var(--input-disabled-border-color);
+}

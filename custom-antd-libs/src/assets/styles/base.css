@@ -1,0 +1,16 @@
+@import 'colors.css';
+@import 'typography.css';
+@import "sizes.css";
+
+html {
+    /*font-size: 62.5%;*/
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.1;
+    padding: 1rem;
+}
+
+.d-hidden {
+    display: none!important;
+}

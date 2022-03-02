@@ -1,0 +1,19 @@
+@import '../../assets/styles/mixins';
+
+.label {
+  &-position-left {
+    padding-right: 1rem;
+  }
+  &-position-right {
+    padding-left: 1rem;
+  }
+  &-position-top {
+    margin-bottom: 0.1rem;
+  }
+  &-position-bottom {
+    margin-top: 0.1rem;
+  }
+  //&.disabled {
+  //  @include input-disabled();
+  //}
+}
