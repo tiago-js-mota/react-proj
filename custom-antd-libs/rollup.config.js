@@ -39,6 +39,7 @@ export default [
         use: ['sass']
       }),
     ],
+    external: [...EXTERNALS]
   },
   {
     input: "dist/esm/types/index.d.ts",
