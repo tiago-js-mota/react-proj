@@ -5,8 +5,8 @@ import { Story, Meta } from '@storybook/react'
 import Button from './index'
 import { IButton } from './i-button'
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 
 export default {
     title: 'CBE/Button',
@@ -94,15 +94,15 @@ OnClick.args = {
         alert('Button Clicked')
     },
 }
-
-export const Image = Template.bind({})
-Image.args = {
-    icon: <FontAwesomeIcon icon={faCoffee} />,
-}
-
-export const IconRight = Template.bind({})
-IconRight.args = {
-    label: 'Click Me',
-    iconPosition: 'right',
-    icon: <FontAwesomeIcon icon={faCoffee} />,
-}
+//
+// export const Image = Template.bind({})
+// Image.args = {
+//     icon: <FontAwesomeIcon icon={faCoffee} />,
+// }
+//
+// export const IconRight = Template.bind({})
+// IconRight.args = {
+//     label: 'Click Me',
+//     iconPosition: 'right',
+//     icon: <FontAwesomeIcon icon={faCoffee} />,
+// }
