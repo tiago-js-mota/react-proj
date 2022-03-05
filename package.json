@@ -8,7 +8,7 @@
     "react-app"
   ],
   "scripts": {
-    "lib-build": "yarn workspace custom-antd-libs build",
+    "lib-build": "yarn workspace custom-antd-libs build-watch",
     "start": "yarn workspace ReactApp1 start"
   },
   "packageManager": "yarn@3.2.0"

@@ -4,6 +4,7 @@
   "description": "Custom React component library based on Ant Design",
   "scripts": {
     "build": "rollup -c",
+    "build-watch": "rollup -c -w",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook -o ./public",
     "lint": "eslint --fix \"./src/**/*.{js,jsx,ts,tsx,json}\"",
