@@ -4910,7 +4910,7 @@ __metadata:
     babel-loader: ^8.2.2
     clean-webpack-plugin: ^3.0.0
     css-loader: ^5.0.2
-    custom-antd-libs: 0.1.2
+    custom-antd-libs: "workspace:*"
     eslint: ^7.19.0
     eslint-config-prettier: ^7.2.0
     eslint-plugin-eslint-comments: ^3.2.0
@@ -7609,7 +7609,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"custom-antd-libs@0.1.2, custom-antd-libs@workspace:custom-antd-libs":
+"custom-antd-libs@workspace:*, custom-antd-libs@workspace:custom-antd-libs":
   version: 0.0.0-use.local
   resolution: "custom-antd-libs@workspace:custom-antd-libs"
   dependencies:

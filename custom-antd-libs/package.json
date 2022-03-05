@@ -1,6 +1,6 @@
 {
   "name": "custom-antd-libs",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "description": "Custom React component library based on Ant Design",
   "scripts": {
     "build": "rollup -c",
