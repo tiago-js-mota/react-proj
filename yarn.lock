@@ -4910,7 +4910,7 @@ __metadata:
     babel-loader: ^8.2.2
     clean-webpack-plugin: ^3.0.0
     css-loader: ^5.0.2
-    custom-antd-libs: ../custom-antd-libs
+    custom-antd-libs: 0.1.2
     eslint: ^7.19.0
     eslint-config-prettier: ^7.2.0
     eslint-plugin-eslint-comments: ^3.2.0
@@ -4925,7 +4925,7 @@ __metadata:
     lodash: 4.17.21
     node-sass: ^6.0.1
     prettier: ^2.2.1
-    react: ^17.0.1
+    react: ^17.0.2
     react-dom: ^17.0.1
     react-hook-form: 7.x
     react-refresh: ^0.9.0
@@ -7609,21 +7609,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"custom-antd-libs@file:../custom-antd-libs::locator=ReactApp1%40workspace%3Areact-app":
-  version: 0.1.2
-  resolution: "custom-antd-libs@file:../custom-antd-libs#../custom-antd-libs::hash=392c1d&locator=ReactApp1%40workspace%3Areact-app"
-  peerDependencies:
-    antd: ^4.18.5
-    axios: ^0.26.0
-    lodash: ^4.17.21
-    react: ^17.0.2
-    react-dom: ^17.0.2
-    react-hook-form: ^7.19.5
-  checksum: 1749d8e3c1e94a96b90071b814cec28c4cce5cf1b84c61e1975fd7a672697ad1882cecf413feb0c750ed75044468c8ec85446b071b9cc742be4e698619676b07
-  languageName: node
-  linkType: hard
-
-"custom-antd-libs@workspace:custom-antd-libs":
+"custom-antd-libs@0.1.2, custom-antd-libs@workspace:custom-antd-libs":
   version: 0.0.0-use.local
   resolution: "custom-antd-libs@workspace:custom-antd-libs"
   dependencies:
@@ -12708,8 +12694,8 @@ __metadata:
   linkType: hard
 
 "lint-staged@npm:^12.3.2":
-  version: 12.3.4
-  resolution: "lint-staged@npm:12.3.4"
+  version: 12.3.5
+  resolution: "lint-staged@npm:12.3.5"
   dependencies:
     cli-truncate: ^3.1.0
     colorette: ^2.0.16
@@ -12726,7 +12712,7 @@ __metadata:
     yaml: ^1.10.2
   bin:
     lint-staged: bin/lint-staged.js
-  checksum: 4e0b4b9da4183a0daeab35d41e4d243fb1270a39db997efa0c3745fa148a7a4b8b723a51cb757595fc8bb118796ca1465e67aede72f25e9ea48165aec36cec3b
+  checksum: 6653c7078b36741e521e5f309b56bb75db198a05cbdd188124ff82a290e352ade3eb1e6080265729e19711ac08d190e300874af00e4e540b57b3c8f0690e2573
   languageName: node
   linkType: hard
 
@@ -16540,7 +16526,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react@npm:^17.0.1, react@npm:^17.0.2":
+"react@npm:^17.0.2":
   version: 17.0.2
   resolution: "react@npm:17.0.2"
   dependencies:

@@ -2,16 +2,14 @@
   "name": "react-proj",
   "version": "1.0.0",
   "main": "index.js",
+  "private": true,
   "workspaces": [
     "custom-antd-libs",
     "react-app"
   ],
   "scripts": {
     "lib-build": "yarn workspace custom-antd-libs build",
-    "lib-add": "yarn workspace ReactApp1 add ../custom-antd-libs",
-    "start": "yarn workspace ReactApp1 start",
-    "lib-build-add-start": "yarn lib-build && yarn lib-add && yarn start",
-    "lib-dist": "yarn workspace custom-antd-libs build"
+    "start": "yarn workspace ReactApp1 start"
   },
   "packageManager": "yarn@3.2.0"
 }
