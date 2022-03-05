@@ -2,12 +2,16 @@
   "name": "react-proj",
   "version": "1.0.0",
   "main": "index.js",
+  "workspaces": [
+    "custom-antd-libs",
+    "react-app"
+  ],
   "scripts": {
-    "install": "yarn --cwd custom-antd-libs install && yarn --cwd react-app install",
-    "lib-build": "yarn --cwd custom-antd-libs build-dev",
-    "lib-add": "yarn --cwd react-app add ../custom-antd-libs/build-dev",
-    "start": "yarn --cwd react-app start",
+    "lib-build": "yarn workspace custom-antd-libs build",
+    "lib-add": "yarn workspace ReactApp1 add ../custom-antd-libs",
+    "start": "yarn workspace ReactApp1 start",
     "lib-build-add-start": "yarn lib-build && yarn lib-add && yarn start",
-    "lib-dist": "yarn --cwd custom-antd-libs build"
-  }
+    "lib-dist": "yarn workspace custom-antd-libs build"
+  },
+  "packageManager": "yarn@3.2.0"
 }
