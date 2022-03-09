@@ -1,0 +1,15 @@
+{
+  "name": "react-proj",
+  "version": "1.0.0",
+  "main": "index.js",
+  "private": true,
+  "workspaces": [
+    "custom-antd-libs",
+    "react-app"
+  ],
+  "scripts": {
+    "lib-build": "yarn workspace custom-antd-libs build-watch",
+    "start": "yarn workspace ReactApp1 start"
+  },
+  "packageManager": "yarn@3.2.0"
+}
